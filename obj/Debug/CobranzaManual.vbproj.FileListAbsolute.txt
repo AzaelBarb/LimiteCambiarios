@@ -1,0 +1,15 @@
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.vbproj.AssemblyReference.cache
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.vbproj.SuggestedBindingRedirects.cache
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.frmCobranza.resources
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.Resources.resources
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.vbproj.GenerateResource.cache
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.vbproj.CoreCompileInputs.cache
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\bin\Debug\CobranzaManual.exe.config
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\bin\Debug\CobranzaManual.exe
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\bin\Debug\CobranzaManual.pdb
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\bin\Debug\CobranzaManual.xml
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.vbproj.CopyComplete
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.exe
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.xml
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.pdb
+S:\Creatoris\Bancrea\Limite Cambiario\ProcesoCobranza\CobranzaManual\obj\Debug\CobranzaManual.frmMonitoreo.resources
