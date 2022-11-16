@@ -25,6 +25,8 @@ Module modMain
     Public ifxCadenaConexion As String
     Public strMsg As String
     Public dtDetalle As New DataTable
+    Public dtDetalleLM As New DataTable
+    Public dtResult As New DataTable
     Public dtDetalleFact As New DataTable
     Public dtUpdate As New DataTable
     Public dtBusqueda As New DataTable
@@ -48,9 +50,36 @@ Module modMain
     End Sub
 
     Public Sub BusquedaInfo(ByVal TipoBusqueda As Integer, ByVal Valor As String)
-        Dim oParam(0) As IfxParameter
+        Dim oParam(3) As IfxParameter
 
-        MsgBox("No se encontro informacion", MsgBoxStyle.Information, "")
+        sSQL = "bdilimcamb:blc_consulta"
+        oParam(0) = New IfxParameter("etipobusq", TipoBusqueda)
+        oParam(1) = New IfxParameter("enumcte", Valor)
+        oParam(2) = New IfxParameter("enumlc", Valor)
+        oParam(3) = New IfxParameter("enumoper", Valor)
+        dtDetalle = clsConexion.ExecSPReturnDT(sSQL, oParam, "Resultado")
 
     End Sub
+
+
+    Public Sub BusquedaMonitoreo(ByVal FechaIni As Date, ByVal FechaFin As Date)
+        Dim oParam(1) As IfxParameter
+
+        sSQL = "bdilimcamb:blc_spmonitoroper"
+        oParam(0) = New IfxParameter("pfechaini", FechaIni)
+        oParam(1) = New IfxParameter("pfechafin", FechaFin)
+        dtDetalle = clsConexion.ExecSPReturnDT(sSQL, oParam, "Resultado")
+    End Sub
+
+    Public Sub BusquedaLC(ByVal Solicitud As String)
+        Dim oParam(0) As IfxParameter
+
+        sSQL = "bdilimcamb:blc_consultalm"
+        oParam(0) = New IfxParameter("numsolicitud", Solicitud)
+        dtDetalleLM = clsConexion.ExecSPReturnDT(sSQL, oParam, "Resultado")
+    End Sub
+
+
+
+
 End Module

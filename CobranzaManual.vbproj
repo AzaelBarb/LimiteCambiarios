@@ -85,6 +85,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMantenimiento.Designer.vb">
+      <DependentUpon>frmMantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMonitoreo.Designer.vb">
       <DependentUpon>frmMonitoreo.vb</DependentUpon>
     </Compile>
@@ -112,6 +118,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimiento.resx">
+      <DependentUpon>frmMantenimiento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMonitoreo.resx">
       <DependentUpon>frmMonitoreo.vb</DependentUpon>

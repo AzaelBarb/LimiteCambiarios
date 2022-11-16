@@ -23,44 +23,44 @@ Partial Class frmCobranza
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.cmdBusqueda = New System.Windows.Forms.Button()
-        Me.txtCriterio = New System.Windows.Forms.TextBox()
-        Me.lblCriterio = New System.Windows.Forms.Label()
-        Me.rbNoCliente = New System.Windows.Forms.RadioButton()
-        Me.rbNoLC = New System.Windows.Forms.RadioButton()
         Me.rbNoOpera = New System.Windows.Forms.RadioButton()
+        Me.rbNoLC = New System.Windows.Forms.RadioButton()
+        Me.rbNoCliente = New System.Windows.Forms.RadioButton()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lblCriterio = New System.Windows.Forms.Label()
+        Me.txtCriterio = New System.Windows.Forms.TextBox()
+        Me.cmdBusqueda = New System.Windows.Forms.Button()
+        Me.dgvResultado = New System.Windows.Forms.DataGridView()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblImporteVenci = New System.Windows.Forms.Label()
-        Me.lblNoOperaciones = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.lblMontoOtor = New System.Windows.Forms.Label()
+        Me.lblDivisa = New System.Windows.Forms.Label()
+        Me.lblProducto = New System.Windows.Forms.Label()
+        Me.lblFechaOrig = New System.Windows.Forms.Label()
+        Me.lblNoLC = New System.Windows.Forms.Label()
+        Me.lblFechaApert = New System.Windows.Forms.Label()
+        Me.lblEstatusLC = New System.Windows.Forms.Label()
+        Me.lblSucursal = New System.Windows.Forms.Label()
+        Me.lblNombreCliente = New System.Windows.Forms.Label()
+        Me.lblNoCliente = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.lblNoCliente = New System.Windows.Forms.Label()
-        Me.lblNombreCliente = New System.Windows.Forms.Label()
-        Me.lblSucursal = New System.Windows.Forms.Label()
-        Me.lblEstatusLC = New System.Windows.Forms.Label()
-        Me.lblFechaApert = New System.Windows.Forms.Label()
-        Me.lblNoLC = New System.Windows.Forms.Label()
-        Me.lblFechaOrig = New System.Windows.Forms.Label()
-        Me.lblProducto = New System.Windows.Forms.Label()
-        Me.lblDivisa = New System.Windows.Forms.Label()
-        Me.lblMontoOtor = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblNoOperaciones = New System.Windows.Forms.Label()
+        Me.lblImporteVenci = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtComentarios = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.txtImporte = New System.Windows.Forms.TextBox()
@@ -68,7 +68,7 @@ Partial Class frmCobranza
         Me.cmdAplicarPago = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvResultado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -84,63 +84,16 @@ Partial Class frmCobranza
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tipo de Busqueda"
         '
-        'GroupBox2
+        'rbNoOpera
         '
-        Me.GroupBox2.Controls.Add(Me.lblCriterio)
-        Me.GroupBox2.Controls.Add(Me.txtCriterio)
-        Me.GroupBox2.Controls.Add(Me.cmdBusqueda)
-        Me.GroupBox2.Location = New System.Drawing.Point(257, 12)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(421, 156)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Criterios de Busqueda"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(684, 13)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(555, 150)
-        Me.DataGridView1.TabIndex = 2
-        '
-        'cmdBusqueda
-        '
-        Me.cmdBusqueda.Location = New System.Drawing.Point(290, 124)
-        Me.cmdBusqueda.Name = "cmdBusqueda"
-        Me.cmdBusqueda.Size = New System.Drawing.Size(119, 26)
-        Me.cmdBusqueda.TabIndex = 0
-        Me.cmdBusqueda.Text = "Realiza Busqueda"
-        Me.cmdBusqueda.UseVisualStyleBackColor = True
-        '
-        'txtCriterio
-        '
-        Me.txtCriterio.Location = New System.Drawing.Point(12, 43)
-        Me.txtCriterio.Name = "txtCriterio"
-        Me.txtCriterio.Size = New System.Drawing.Size(208, 20)
-        Me.txtCriterio.TabIndex = 1
-        '
-        'lblCriterio
-        '
-        Me.lblCriterio.Location = New System.Drawing.Point(12, 18)
-        Me.lblCriterio.Name = "lblCriterio"
-        Me.lblCriterio.Size = New System.Drawing.Size(207, 25)
-        Me.lblCriterio.TabIndex = 2
-        Me.lblCriterio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'rbNoCliente
-        '
-        Me.rbNoCliente.AutoSize = True
-        Me.rbNoCliente.Location = New System.Drawing.Point(17, 26)
-        Me.rbNoCliente.Name = "rbNoCliente"
-        Me.rbNoCliente.Size = New System.Drawing.Size(112, 17)
-        Me.rbNoCliente.TabIndex = 0
-        Me.rbNoCliente.TabStop = True
-        Me.rbNoCliente.Text = "Numero de Cliente"
-        Me.rbNoCliente.UseVisualStyleBackColor = True
+        Me.rbNoOpera.AutoSize = True
+        Me.rbNoOpera.Location = New System.Drawing.Point(17, 124)
+        Me.rbNoOpera.Name = "rbNoOpera"
+        Me.rbNoOpera.Size = New System.Drawing.Size(126, 17)
+        Me.rbNoOpera.TabIndex = 2
+        Me.rbNoOpera.TabStop = True
+        Me.rbNoOpera.Text = "Numeo de Operacion"
+        Me.rbNoOpera.UseVisualStyleBackColor = True
         '
         'rbNoLC
         '
@@ -153,16 +106,63 @@ Partial Class frmCobranza
         Me.rbNoLC.Text = "Numero de LC:"
         Me.rbNoLC.UseVisualStyleBackColor = True
         '
-        'rbNoOpera
+        'rbNoCliente
         '
-        Me.rbNoOpera.AutoSize = True
-        Me.rbNoOpera.Location = New System.Drawing.Point(17, 124)
-        Me.rbNoOpera.Name = "rbNoOpera"
-        Me.rbNoOpera.Size = New System.Drawing.Size(126, 17)
-        Me.rbNoOpera.TabIndex = 2
-        Me.rbNoOpera.TabStop = True
-        Me.rbNoOpera.Text = "Numeo de Operacion"
-        Me.rbNoOpera.UseVisualStyleBackColor = True
+        Me.rbNoCliente.AutoSize = True
+        Me.rbNoCliente.Location = New System.Drawing.Point(17, 26)
+        Me.rbNoCliente.Name = "rbNoCliente"
+        Me.rbNoCliente.Size = New System.Drawing.Size(112, 17)
+        Me.rbNoCliente.TabIndex = 0
+        Me.rbNoCliente.TabStop = True
+        Me.rbNoCliente.Text = "Numero de Cliente"
+        Me.rbNoCliente.UseVisualStyleBackColor = True
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.lblCriterio)
+        Me.GroupBox2.Controls.Add(Me.txtCriterio)
+        Me.GroupBox2.Controls.Add(Me.cmdBusqueda)
+        Me.GroupBox2.Location = New System.Drawing.Point(257, 12)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(421, 156)
+        Me.GroupBox2.TabIndex = 1
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Criterios de Busqueda"
+        '
+        'lblCriterio
+        '
+        Me.lblCriterio.Location = New System.Drawing.Point(12, 18)
+        Me.lblCriterio.Name = "lblCriterio"
+        Me.lblCriterio.Size = New System.Drawing.Size(207, 25)
+        Me.lblCriterio.TabIndex = 2
+        Me.lblCriterio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtCriterio
+        '
+        Me.txtCriterio.Location = New System.Drawing.Point(12, 43)
+        Me.txtCriterio.Name = "txtCriterio"
+        Me.txtCriterio.Size = New System.Drawing.Size(208, 20)
+        Me.txtCriterio.TabIndex = 1
+        '
+        'cmdBusqueda
+        '
+        Me.cmdBusqueda.Location = New System.Drawing.Point(290, 124)
+        Me.cmdBusqueda.Name = "cmdBusqueda"
+        Me.cmdBusqueda.Size = New System.Drawing.Size(119, 26)
+        Me.cmdBusqueda.TabIndex = 0
+        Me.cmdBusqueda.Text = "Realiza Busqueda"
+        Me.cmdBusqueda.UseVisualStyleBackColor = True
+        '
+        'dgvResultado
+        '
+        Me.dgvResultado.AllowUserToAddRows = False
+        Me.dgvResultado.AllowUserToDeleteRows = False
+        Me.dgvResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvResultado.Location = New System.Drawing.Point(684, 18)
+        Me.dgvResultado.Name = "dgvResultado"
+        Me.dgvResultado.ReadOnly = True
+        Me.dgvResultado.Size = New System.Drawing.Size(555, 150)
+        Me.dgvResultado.TabIndex = 2
         '
         'GroupBox3
         '
@@ -198,115 +198,105 @@ Partial Class frmCobranza
         Me.GroupBox3.TabIndex = 3
         Me.GroupBox3.TabStop = False
         '
-        'Label1
+        'lblMontoOtor
         '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(13, 16)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(1201, 27)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "D A T O S    G E N E R A L E S"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblMontoOtor.AutoSize = True
+        Me.lblMontoOtor.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMontoOtor.Location = New System.Drawing.Point(729, 156)
+        Me.lblMontoOtor.Name = "lblMontoOtor"
+        Me.lblMontoOtor.Size = New System.Drawing.Size(14, 13)
+        Me.lblMontoOtor.TabIndex = 25
+        Me.lblMontoOtor.Text = "L"
         '
-        'Label2
+        'lblDivisa
         '
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(13, 188)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(1201, 27)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Detalle Limite Cambiario"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblDivisa.AutoSize = True
+        Me.lblDivisa.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDivisa.Location = New System.Drawing.Point(729, 132)
+        Me.lblDivisa.Name = "lblDivisa"
+        Me.lblDivisa.Size = New System.Drawing.Size(14, 13)
+        Me.lblDivisa.TabIndex = 24
+        Me.lblDivisa.Text = "L"
         '
-        'Label3
+        'lblProducto
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(101, 230)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(147, 13)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Importe del Vencimiento:"
+        Me.lblProducto.AutoSize = True
+        Me.lblProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblProducto.Location = New System.Drawing.Point(729, 107)
+        Me.lblProducto.Name = "lblProducto"
+        Me.lblProducto.Size = New System.Drawing.Size(14, 13)
+        Me.lblProducto.TabIndex = 23
+        Me.lblProducto.Text = "L"
         '
-        'Label4
+        'lblFechaOrig
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(18, 278)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(234, 13)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Numero de Operaciones al Vencimiento:"
+        Me.lblFechaOrig.AutoSize = True
+        Me.lblFechaOrig.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaOrig.Location = New System.Drawing.Point(729, 81)
+        Me.lblFechaOrig.Name = "lblFechaOrig"
+        Me.lblFechaOrig.Size = New System.Drawing.Size(14, 13)
+        Me.lblFechaOrig.TabIndex = 22
+        Me.lblFechaOrig.Text = "L"
         '
-        'lblImporteVenci
+        'lblNoLC
         '
-        Me.lblImporteVenci.AutoSize = True
-        Me.lblImporteVenci.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblImporteVenci.Location = New System.Drawing.Point(266, 230)
-        Me.lblImporteVenci.Name = "lblImporteVenci"
-        Me.lblImporteVenci.Size = New System.Drawing.Size(0, 13)
-        Me.lblImporteVenci.TabIndex = 4
+        Me.lblNoLC.AutoSize = True
+        Me.lblNoLC.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNoLC.Location = New System.Drawing.Point(729, 56)
+        Me.lblNoLC.Name = "lblNoLC"
+        Me.lblNoLC.Size = New System.Drawing.Size(14, 13)
+        Me.lblNoLC.TabIndex = 21
+        Me.lblNoLC.Text = "L"
         '
-        'lblNoOperaciones
+        'lblFechaApert
         '
-        Me.lblNoOperaciones.AutoSize = True
-        Me.lblNoOperaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNoOperaciones.Location = New System.Drawing.Point(266, 278)
-        Me.lblNoOperaciones.Name = "lblNoOperaciones"
-        Me.lblNoOperaciones.Size = New System.Drawing.Size(0, 13)
-        Me.lblNoOperaciones.TabIndex = 5
+        Me.lblFechaApert.AutoSize = True
+        Me.lblFechaApert.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaApert.Location = New System.Drawing.Point(149, 156)
+        Me.lblFechaApert.Name = "lblFechaApert"
+        Me.lblFechaApert.Size = New System.Drawing.Size(14, 13)
+        Me.lblFechaApert.TabIndex = 20
+        Me.lblFechaApert.Text = "L"
         '
-        'Label5
+        'lblEstatusLC
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(28, 56)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(115, 13)
-        Me.Label5.TabIndex = 6
-        Me.Label5.Text = "Numero de Cliente:"
+        Me.lblEstatusLC.AutoSize = True
+        Me.lblEstatusLC.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstatusLC.Location = New System.Drawing.Point(149, 132)
+        Me.lblEstatusLC.Name = "lblEstatusLC"
+        Me.lblEstatusLC.Size = New System.Drawing.Size(14, 13)
+        Me.lblEstatusLC.TabIndex = 19
+        Me.lblEstatusLC.Text = "L"
         '
-        'Label6
+        'lblSucursal
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(29, 81)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(114, 13)
-        Me.Label6.TabIndex = 7
-        Me.Label6.Text = "Nombre del Cliente"
+        Me.lblSucursal.AutoSize = True
+        Me.lblSucursal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSucursal.Location = New System.Drawing.Point(149, 107)
+        Me.lblSucursal.Name = "lblSucursal"
+        Me.lblSucursal.Size = New System.Drawing.Size(14, 13)
+        Me.lblSucursal.TabIndex = 18
+        Me.lblSucursal.Text = "L"
         '
-        'Label7
+        'lblNombreCliente
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(27, 156)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(116, 13)
-        Me.Label7.TabIndex = 8
-        Me.Label7.Text = "Fecha de Apertura:"
+        Me.lblNombreCliente.AutoSize = True
+        Me.lblNombreCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombreCliente.Location = New System.Drawing.Point(149, 81)
+        Me.lblNombreCliente.Name = "lblNombreCliente"
+        Me.lblNombreCliente.Size = New System.Drawing.Size(14, 13)
+        Me.lblNombreCliente.TabIndex = 17
+        Me.lblNombreCliente.Text = "L"
         '
-        'Label8
+        'lblNoCliente
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(83, 107)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(60, 13)
-        Me.Label8.TabIndex = 9
-        Me.Label8.Text = "Sucursal:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(71, 132)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(72, 13)
-        Me.Label9.TabIndex = 10
-        Me.Label9.Text = "Estatus LC:"
+        Me.lblNoCliente.AutoSize = True
+        Me.lblNoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNoCliente.Location = New System.Drawing.Point(149, 56)
+        Me.lblNoCliente.Name = "lblNoCliente"
+        Me.lblNoCliente.Size = New System.Drawing.Size(14, 13)
+        Me.lblNoCliente.TabIndex = 16
+        Me.lblNoCliente.Text = "L"
         '
         'Label10
         '
@@ -358,105 +348,115 @@ Partial Class frmCobranza
         Me.Label14.TabIndex = 11
         Me.Label14.Text = "Numero de LC:"
         '
-        'lblNoCliente
+        'Label9
         '
-        Me.lblNoCliente.AutoSize = True
-        Me.lblNoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNoCliente.Location = New System.Drawing.Point(149, 56)
-        Me.lblNoCliente.Name = "lblNoCliente"
-        Me.lblNoCliente.Size = New System.Drawing.Size(14, 13)
-        Me.lblNoCliente.TabIndex = 16
-        Me.lblNoCliente.Text = "L"
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(71, 132)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(72, 13)
+        Me.Label9.TabIndex = 10
+        Me.Label9.Text = "Estatus LC:"
         '
-        'lblNombreCliente
+        'Label8
         '
-        Me.lblNombreCliente.AutoSize = True
-        Me.lblNombreCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombreCliente.Location = New System.Drawing.Point(149, 81)
-        Me.lblNombreCliente.Name = "lblNombreCliente"
-        Me.lblNombreCliente.Size = New System.Drawing.Size(14, 13)
-        Me.lblNombreCliente.TabIndex = 17
-        Me.lblNombreCliente.Text = "L"
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(83, 107)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(60, 13)
+        Me.Label8.TabIndex = 9
+        Me.Label8.Text = "Sucursal:"
         '
-        'lblSucursal
+        'Label7
         '
-        Me.lblSucursal.AutoSize = True
-        Me.lblSucursal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSucursal.Location = New System.Drawing.Point(149, 107)
-        Me.lblSucursal.Name = "lblSucursal"
-        Me.lblSucursal.Size = New System.Drawing.Size(14, 13)
-        Me.lblSucursal.TabIndex = 18
-        Me.lblSucursal.Text = "L"
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(27, 156)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(116, 13)
+        Me.Label7.TabIndex = 8
+        Me.Label7.Text = "Fecha de Apertura:"
         '
-        'lblEstatusLC
+        'Label6
         '
-        Me.lblEstatusLC.AutoSize = True
-        Me.lblEstatusLC.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEstatusLC.Location = New System.Drawing.Point(149, 132)
-        Me.lblEstatusLC.Name = "lblEstatusLC"
-        Me.lblEstatusLC.Size = New System.Drawing.Size(14, 13)
-        Me.lblEstatusLC.TabIndex = 19
-        Me.lblEstatusLC.Text = "L"
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(29, 81)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(114, 13)
+        Me.Label6.TabIndex = 7
+        Me.Label6.Text = "Nombre del Cliente"
         '
-        'lblFechaApert
+        'Label5
         '
-        Me.lblFechaApert.AutoSize = True
-        Me.lblFechaApert.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaApert.Location = New System.Drawing.Point(149, 156)
-        Me.lblFechaApert.Name = "lblFechaApert"
-        Me.lblFechaApert.Size = New System.Drawing.Size(14, 13)
-        Me.lblFechaApert.TabIndex = 20
-        Me.lblFechaApert.Text = "L"
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(28, 56)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(115, 13)
+        Me.Label5.TabIndex = 6
+        Me.Label5.Text = "Numero de Cliente:"
         '
-        'lblNoLC
+        'lblNoOperaciones
         '
-        Me.lblNoLC.AutoSize = True
-        Me.lblNoLC.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNoLC.Location = New System.Drawing.Point(729, 56)
-        Me.lblNoLC.Name = "lblNoLC"
-        Me.lblNoLC.Size = New System.Drawing.Size(14, 13)
-        Me.lblNoLC.TabIndex = 21
-        Me.lblNoLC.Text = "L"
+        Me.lblNoOperaciones.AutoSize = True
+        Me.lblNoOperaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNoOperaciones.Location = New System.Drawing.Point(266, 278)
+        Me.lblNoOperaciones.Name = "lblNoOperaciones"
+        Me.lblNoOperaciones.Size = New System.Drawing.Size(0, 13)
+        Me.lblNoOperaciones.TabIndex = 5
         '
-        'lblFechaOrig
+        'lblImporteVenci
         '
-        Me.lblFechaOrig.AutoSize = True
-        Me.lblFechaOrig.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaOrig.Location = New System.Drawing.Point(729, 81)
-        Me.lblFechaOrig.Name = "lblFechaOrig"
-        Me.lblFechaOrig.Size = New System.Drawing.Size(14, 13)
-        Me.lblFechaOrig.TabIndex = 22
-        Me.lblFechaOrig.Text = "L"
+        Me.lblImporteVenci.AutoSize = True
+        Me.lblImporteVenci.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblImporteVenci.Location = New System.Drawing.Point(266, 230)
+        Me.lblImporteVenci.Name = "lblImporteVenci"
+        Me.lblImporteVenci.Size = New System.Drawing.Size(0, 13)
+        Me.lblImporteVenci.TabIndex = 4
         '
-        'lblProducto
+        'Label4
         '
-        Me.lblProducto.AutoSize = True
-        Me.lblProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProducto.Location = New System.Drawing.Point(729, 107)
-        Me.lblProducto.Name = "lblProducto"
-        Me.lblProducto.Size = New System.Drawing.Size(14, 13)
-        Me.lblProducto.TabIndex = 23
-        Me.lblProducto.Text = "L"
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(18, 278)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(234, 13)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Numero de Operaciones al Vencimiento:"
         '
-        'lblDivisa
+        'Label3
         '
-        Me.lblDivisa.AutoSize = True
-        Me.lblDivisa.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDivisa.Location = New System.Drawing.Point(729, 132)
-        Me.lblDivisa.Name = "lblDivisa"
-        Me.lblDivisa.Size = New System.Drawing.Size(14, 13)
-        Me.lblDivisa.TabIndex = 24
-        Me.lblDivisa.Text = "L"
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(101, 230)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(147, 13)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Importe del Vencimiento:"
         '
-        'lblMontoOtor
+        'Label2
         '
-        Me.lblMontoOtor.AutoSize = True
-        Me.lblMontoOtor.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMontoOtor.Location = New System.Drawing.Point(729, 156)
-        Me.lblMontoOtor.Name = "lblMontoOtor"
-        Me.lblMontoOtor.Size = New System.Drawing.Size(14, 13)
-        Me.lblMontoOtor.TabIndex = 25
-        Me.lblMontoOtor.Text = "L"
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(13, 188)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(1201, 27)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Detalle Limite Cambiario"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(13, 16)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(1201, 27)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "D A T O S    G E N E R A L E S"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label15
         '
@@ -480,13 +480,13 @@ Partial Class frmCobranza
         Me.Label16.Text = "Detalle Limite Cambiario"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TextBox1
+        'txtComentarios
         '
-        Me.TextBox1.Location = New System.Drawing.Point(34, 565)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(569, 94)
-        Me.TextBox1.TabIndex = 6
+        Me.txtComentarios.Location = New System.Drawing.Point(34, 565)
+        Me.txtComentarios.Multiline = True
+        Me.txtComentarios.Name = "txtComentarios"
+        Me.txtComentarios.Size = New System.Drawing.Size(569, 94)
+        Me.txtComentarios.TabIndex = 6
         '
         'Label17
         '
@@ -545,11 +545,11 @@ Partial Class frmCobranza
         Me.Controls.Add(Me.txtImporte)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtComentarios)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvResultado)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -561,7 +561,7 @@ Partial Class frmCobranza
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvResultado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
@@ -577,7 +577,7 @@ Partial Class frmCobranza
     Friend WithEvents lblCriterio As Label
     Friend WithEvents txtCriterio As TextBox
     Friend WithEvents cmdBusqueda As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvResultado As DataGridView
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents lblMontoOtor As Label
     Friend WithEvents lblDivisa As Label
@@ -607,7 +607,7 @@ Partial Class frmCobranza
     Friend WithEvents Label1 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtComentarios As TextBox
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents txtImporte As TextBox

@@ -23,17 +23,17 @@ Partial Class frmMonitoreo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.rbDia = New System.Windows.Forms.RadioButton()
         Me.rbRangoFechas = New System.Windows.Forms.RadioButton()
+        Me.rbDia = New System.Windows.Forms.RadioButton()
         Me.gpbCriterios = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.dtFInicial = New System.Windows.Forms.DateTimePicker()
         Me.dtFFinal = New System.Windows.Forms.DateTimePicker()
+        Me.dtFInicial = New System.Windows.Forms.DateTimePicker()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.cmdBusqueda = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.dgvResultado = New System.Windows.Forms.DataGridView()
         Me.cmdExportar = New System.Windows.Forms.Button()
+        Me.dgvResultado = New System.Windows.Forms.DataGridView()
         Me.colNombreCliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colNumeroOpera = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colTipoOper = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -56,24 +56,13 @@ Partial Class frmMonitoreo
         Me.GroupBox1.Controls.Add(Me.rbRangoFechas)
         Me.GroupBox1.Controls.Add(Me.rbDia)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(241, 170)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Busqueda"
-        '
-        'rbDia
-        '
-        Me.rbDia.AutoSize = True
-        Me.rbDia.Location = New System.Drawing.Point(31, 37)
-        Me.rbDia.Name = "rbDia"
-        Me.rbDia.Size = New System.Drawing.Size(70, 20)
-        Me.rbDia.TabIndex = 0
-        Me.rbDia.TabStop = True
-        Me.rbDia.Text = "Por Dia"
-        Me.rbDia.UseVisualStyleBackColor = True
         '
         'rbRangoFechas
         '
@@ -85,6 +74,17 @@ Partial Class frmMonitoreo
         Me.rbRangoFechas.TabStop = True
         Me.rbRangoFechas.Text = "Rango de Fechas"
         Me.rbRangoFechas.UseVisualStyleBackColor = True
+        '
+        'rbDia
+        '
+        Me.rbDia.AutoSize = True
+        Me.rbDia.Location = New System.Drawing.Point(31, 37)
+        Me.rbDia.Name = "rbDia"
+        Me.rbDia.Size = New System.Drawing.Size(70, 20)
+        Me.rbDia.TabIndex = 0
+        Me.rbDia.TabStop = True
+        Me.rbDia.Text = "Por Dia"
+        Me.rbDia.UseVisualStyleBackColor = True
         '
         'gpbCriterios
         '
@@ -101,14 +101,21 @@ Partial Class frmMonitoreo
         Me.gpbCriterios.TabStop = False
         Me.gpbCriterios.Text = "Criterio"
         '
-        'Label1
+        'dtFFinal
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(26, 29)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(85, 16)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Fecha Inicial:"
+        Me.dtFFinal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtFFinal.Location = New System.Drawing.Point(29, 123)
+        Me.dtFFinal.Name = "dtFFinal"
+        Me.dtFFinal.Size = New System.Drawing.Size(170, 22)
+        Me.dtFFinal.TabIndex = 3
+        '
+        'dtFInicial
+        '
+        Me.dtFInicial.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtFInicial.Location = New System.Drawing.Point(29, 48)
+        Me.dtFInicial.Name = "dtFInicial"
+        Me.dtFInicial.Size = New System.Drawing.Size(170, 22)
+        Me.dtFInicial.TabIndex = 2
         '
         'Label2
         '
@@ -119,21 +126,14 @@ Partial Class frmMonitoreo
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Fecha Inicial:"
         '
-        'dtFInicial
+        'Label1
         '
-        Me.dtFInicial.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtFInicial.Location = New System.Drawing.Point(29, 48)
-        Me.dtFInicial.Name = "dtFInicial"
-        Me.dtFInicial.Size = New System.Drawing.Size(170, 22)
-        Me.dtFInicial.TabIndex = 2
-        '
-        'dtFFinal
-        '
-        Me.dtFFinal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtFFinal.Location = New System.Drawing.Point(29, 123)
-        Me.dtFFinal.Name = "dtFFinal"
-        Me.dtFFinal.Size = New System.Drawing.Size(170, 22)
-        Me.dtFFinal.TabIndex = 3
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(26, 29)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(85, 16)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Fecha Inicial:"
         '
         'cmdBusqueda
         '
@@ -155,6 +155,15 @@ Partial Class frmMonitoreo
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Resultados"
         '
+        'cmdExportar
+        '
+        Me.cmdExportar.Location = New System.Drawing.Point(817, 21)
+        Me.cmdExportar.Name = "cmdExportar"
+        Me.cmdExportar.Size = New System.Drawing.Size(105, 24)
+        Me.cmdExportar.TabIndex = 4
+        Me.cmdExportar.Text = "Exportar Excel"
+        Me.cmdExportar.UseVisualStyleBackColor = True
+        '
         'dgvResultado
         '
         Me.dgvResultado.AllowUserToAddRows = False
@@ -166,15 +175,6 @@ Partial Class frmMonitoreo
         Me.dgvResultado.ReadOnly = True
         Me.dgvResultado.Size = New System.Drawing.Size(916, 367)
         Me.dgvResultado.TabIndex = 3
-        '
-        'cmdExportar
-        '
-        Me.cmdExportar.Location = New System.Drawing.Point(817, 21)
-        Me.cmdExportar.Name = "cmdExportar"
-        Me.cmdExportar.Size = New System.Drawing.Size(105, 24)
-        Me.cmdExportar.TabIndex = 4
-        Me.cmdExportar.Text = "Exportar Excel"
-        Me.cmdExportar.UseVisualStyleBackColor = True
         '
         'colNombreCliente
         '
@@ -253,7 +253,7 @@ Partial Class frmMonitoreo
         Me.Controls.Add(Me.gpbCriterios)
         Me.Controls.Add(Me.GroupBox1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmMonitoreo"
